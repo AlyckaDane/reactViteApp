@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-image: url('public/6087b3dd4cb5a_5f1ed9a0e39af_063_1148640972.jpg'); /* Path to your background image */
+    background-image: url('my-vite-react-app/public/6087b3dd4cb5a_5f1ed9a0e39af_063_1148640972.jpg'); /* Path to your background image */
     background-size: cover; /* Cover the entire viewport */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent the image from repeating */
