@@ -1,0 +1,152 @@
+/* TalentForm.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('public/6087b3dd4cb5a_5f1ed9a0e39af_063_1148640972.jpg'); /* Path to your background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Form Container */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Form Card */
+.form-card {
+    background: rgba(123, 170, 246, 0.187);
+    border-radius: 60px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Form Title */
+.form-card h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #cce6fd; /* Deep pink for the title */
+}
+
+/* fill out */
+.form-card p {
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Form Field */
+.form-field {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.form-field label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #3c7bfa; /* Deep pink for labels */
+}
+
+.form-field input,
+.form-field select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #053efa; /* Baby pink border */
+    border-radius: 10px;
+    font-size: 14px;
+    background-color: #bac2f3da; /* Soft pink background */
+}
+
+.form-field input:focus,
+.form-field select:focus {
+    outline: none;
+    border-color: #000000; /* Highlight border */
+}
+
+.submit-btn {
+    background: #3253bd; 
+    color: #7895f7; 
+    border: 2px solid #ffb6c1;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+}
+
+.submit-btn:hover {
+    background: #71a0f8; 
+    border-color: #7190f5;
+}
+
+/* Confirmation Card */
+.confirmation-card {
+    background: rgb(156, 202, 255); /* Lighter gray for a formal appearance */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 70px;
+    width: 1000%;
+    max-width: 1000px;
+    text-align: left; /* Align text to the left for a more formal look */
+    color: #000000;
+    margin-top: 10px;
+}
+
+/* Confirmation Title */
+.confirmation-card h1 {
+    font-size: 30px;
+    color: #0a3c75; /* Dark blue for a professional and clean title */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Confirmation Subheading */
+.confirmation-card h2 {
+    font-size: 24px;
+    color: #001b75; /* Slightly lighter blue for emphasis */
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Confirmation Your Info */
+.confirmation-card strong {
+    font-size: 16px;
+    color: #004064; /* Dark blue for emphasis */
+}
+
+/* Confirmation Text */
+.confirmation-card p {
+    font-size: 16px;
+    color: #0086af;
+    line-height: 1.6; /* Increase line spacing for readability */
+    margin-bottom: 15px;
+}
+
+/* Address and Schedule Section */
+.confirmation-card h3 {
+    font-size: 18px;
+    color: #004064; 
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+.confirmation-card p {
+    font-size: 16px;
+    color: #333333;
+    margin-top: 5px;
+}
