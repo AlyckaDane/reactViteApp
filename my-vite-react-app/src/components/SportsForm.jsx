@@ -20,7 +20,7 @@ const SportsForm = () => {
         });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
     
         if (!formData.sports) {
@@ -28,14 +28,35 @@ const SportsForm = () => {
             return;
         }
     
-        // Log the form data on submit
-        console.log("Form Submitted with Data:", formData);
+        try {
+            const response = await fetch(
+                "https://danemartialarts-cqfyd5e3gyhrdqc6.southeastasia-01.azurewebsites.net/",
+                {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(formData),
+                }
+            );
     
-        setSubmitted(true); // Mark as submitted to show confirmation
+            if (response.ok) {
+                const result = await response.json();
+                alert("Form is submitted successfully");
+                console.log("API Response: ", result);
+            } else {
+                const errorText = await response.text();
+                console.error("API Error: ", response.status, errorText);
+                alert(`Error submitting form: ${response.statusText}`);
+            }
+        } catch (error) {
+            alert("An error occurred while submitting the form.");
+            console.error("Error ", error);
+        }
     };
-
     
 
+      
     return (
         <div className="form-container">
             {!submitted ? (
