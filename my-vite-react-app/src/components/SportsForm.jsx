@@ -30,7 +30,7 @@ const SportsForm = () => {
     
         try {
             const response = await fetch(
-                "https://rogelmartialarts-debfaeahb7ajakdv.southeastasia-01.azurewebsites.net/",
+                "https://rogelmartialarts-debfaeahb7ajakdv.southeastasia-01.azurewebsites.net/submit",
                 {
                     method: "POST",
                     headers: {
