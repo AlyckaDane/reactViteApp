@@ -1,4 +1,3 @@
-
 import React from "react";
 import SportsForm from "./components/SportsForm"; // Ensure the path is correct
 
